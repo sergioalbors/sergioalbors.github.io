@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Sergio Albors
     - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: 22nd March 2005
+    - name: Contact
+      value: sergioalborsjuez@gmail.com
 
 - title: Education
   type: time_table
