@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
+title: POLYNOMIAL REGRESSIONS
 description: with background image
-img: assets/img/12.jpg
+img: "C:\Users\salbo\Pictures\polynomial-regression-in-machine-learning-ACTE.gif"
 importance: 1
 category: work
 related_publications: true

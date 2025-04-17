@@ -31,4 +31,4 @@ I was born and raised in Barcelona, Spain where I have lived my entire life.  I 
 
 In my spare time, I enjoy going to the gym, training kickboxing, grappling, mountain bike and hanging out with my  friends.
 
-I will be applying to bachelor programs in mathematics soon. Here is my github, and I can be reached at sergioalborsjuez [at] gmail [dot] com. 
+I will be applying to bachelor programs in mathematics soon. Here is my github, and I can be reached at sergioalborsjuez@gmail.com 
