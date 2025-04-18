@@ -77,16 +77,19 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Finance
       items:
-        - Description 1.
-        - Description 2.
+        - real estate
+        - stocks and bonds
     - title: Topic 2.
       items:
         - Description 1.
         - Description 2.
 
 - title: Other Interests
-  type: list
+  type: nested_list
   contents:
-    - <u>Hobbies:</u> Wrestling, Kickboxing, mountain biking.
+    - title: Wrestling
+    - title: stocks and investments
+    - title: Kickboxing
+    - title: mountain biking
