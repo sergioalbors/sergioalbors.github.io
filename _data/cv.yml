@@ -5,6 +5,8 @@
       value: Sergio Albors
     - name: Date of Birth
       value: 22nd March 2005
+    - name: Citizenship
+      value: Spain
     - name: Contact
       value: sergioalborsjuez@gmail.com
 
@@ -94,4 +96,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Wrestling, Kickboxing, mountain biking.
