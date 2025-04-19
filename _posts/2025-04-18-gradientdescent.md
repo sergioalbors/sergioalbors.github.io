@@ -43,7 +43,9 @@ Por lo tanto el gradiente de nuestra función coste será:
 
 $\nabla f = \left( 2, -3 \right)$
 
+Para funciones mucho más complejas se inicializa una variable a un valor al azar antes de derivar respecto a ella.
 
+Lo que hace gradient descent, es coger la dirección de máximo crecimiento e ir hacia la dirección contraria ya que lo que queremos es minimizar la función coste, o en otras palabras minimizar el error entre nuestro valor predecido y el actual. Una vez tenemos el gradiente con los valores iniciales al azar. Gradient descent lo que hace es va avanzando a pasos muy pequeños a la dirección contraria del gradiente ya que como hemos dicho queremos minimizar y el gradiente nos da el máximo crecimiento. 
 
 
 
