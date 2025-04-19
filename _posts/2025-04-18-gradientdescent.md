@@ -26,7 +26,9 @@ We could clearly see its minima is $4x=0$
 
 But with much more complex functions, which depend on more than 1 variable this wont' do it. 
 To apply the gradient descent method, there is 2 things we need. 
+
     - the direction
+    
     - learning rate
 
 ## How to know the direction of more complex functions?
@@ -52,8 +54,9 @@ $\nabla f = \left( 2, -3 \right)$
 
 Para funciones mucho más complejas se inicializa una variable a un valor al azar antes de derivar respecto a ella.
 
+## Learning rate
 Lo que hace gradient descent, es coger la dirección de máximo crecimiento e ir hacia la dirección contraria ya que lo que queremos es minimizar la función coste, o en otras palabras minimizar el error entre nuestro valor predecido y el actual. Una vez tenemos el gradiente con los valores iniciales al azar. Gradient descent lo que hace es va avanzando a pasos muy pequeños a la dirección contraria del gradiente. Ya que como hemos dicho queremos minimizar y el gradiente nos da el máximo crecimiento, por lo tanto, lo contrario. 
 
-Una vez tenemos la dirección, 
+
 
 
