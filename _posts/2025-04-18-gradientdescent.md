@@ -32,12 +32,13 @@ Las derivadas parciales permiten calcular el gradiente de una función. El gradi
 
 Por ejemplo, si nuestra función coste depende de 2 variables como son x e y, 
 
-$\C(x,y)=2x-3y+6$
+$C(x,y)=2x-3y+6$
 
 Deberemos derivar primero respecto a x, y luego respecto a y quedando asi:
 
-$\frac{\partial c}{\partial x}=2$
-$\frac{\partial c}{\partial y}=-3$
+$\frac{\partial C}{\partial x}=2$,
+
+$\frac{\partial C}{\partial y}=-3$
 
 Por lo tanto el gradiente de nuestra función coste será:
 
