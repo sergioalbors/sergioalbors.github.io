@@ -32,12 +32,15 @@ Let's assume we have a function that depends on 2 variables such as:
 
 $f(x,y)=x^2+y^2+2xy$
 
-If we do the regular method($f'(x)=0$), we'd have $2x+2y=0$, which is equivalent to $x=-y$ but this doesn't mean that x=0 minimizes the function. There is so much information missing here, this only shows that there exists a relatinoship between $x$ and $y$, but we don't know how this function changes with respect to $y$.
+If we do the regular method($f'(x)=0$), we'd have $2x+2y=0$, which is equivalent to $x=-y$. There is so much information missing here, this only shows that there exists a relationship between $x$ and $y$, but we don't know how this function changes with respect to $y$.
 
 In order to solve more complex functions, will have to figure out two things:
-### 1. the direction
 
-### 2. the learning rate
+#### 1. the direction
+
+#### 2. the learning rate
+
+
 
 ## How to know the DIRECTION of more complex functions?
 
@@ -46,22 +49,27 @@ To find the direction of maximum growth for more complex functions that depend o
 
 Partial derivatives allow us to compute the gradient of a function. The gradient is a vector that points in the direction of the function's maximum growth and indicates how the function's values change in each direction.
 
-Por ejemplo, si nuestra función coste depende de 2 variables como son x e y, 
+For instance, if our cost function depends on 2 variables like $x$ or $y$,such as:
 
 $C(x,y)=2x-3y+6$
 
-Deberemos derivar primero respecto a x, y luego respecto a y quedando asi:
+We will have to first differentiate with respect to $x$, and then differentiate with respect to $y$, resulting in:
 
 $\frac{\partial C}{\partial x}=2$
 
 $\frac{\partial C}{\partial y}=-3$
 
-Por lo tanto el gradiente de nuestra función coste será:
+Therefore, the gradient of our cost function will be:
+
 
 $\nabla f = \left( 2, -3 \right)$
 
 
-Once we know the direction of maximum growth, (2, -3) in this case, gradient descent works by taking very small steps in the opposite direction of the gradient. This small steps are the learning rate of our cost function.  
+Once we know the direction of maximum growth, (2, -3) in this case, gradient descent works by taking very small steps in the opposite direction of the gradient. This small steps are the learning rate of our cost function. 
+
+###### Why the opposite direction? 
+
+Because we want to find the minima, and the gradient as we stated multiple times, gives us the maximum growth, so the opposite direction will hopefully lead us to the lowest point of the function (spoiler: if we don't skip that point).
 
 ## Learning rate
 
