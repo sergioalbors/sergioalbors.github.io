@@ -34,9 +34,19 @@ $f(x,y)=x^2+y^2+2xy$
 
 If we do the regular method($f'(x)=0$), we'd have $2x+2y=0$, which is equivalent to $x=-y$. There is so much information missing here, this only shows that there exists a relationship between $x$ and $y$, but we don't know how this function changes with respect to $y$.
 
-In order to solve more complex functions, will have to figure out two things:
+The equation that describes what this algorithm does is: 
 
-#### 1. the direction
+$d = a- &lambda *\nabla f(a)$
+
+where:
+
+- a = our learning rate
+
+- $\nabla f(a)$ = the gradient of our function
+
+In order to solve complex functions with these equation, will have to figure out what the following things mean: 
+
+#### 1. the direction (gradient)
 
 #### 2. the learning rate
 
@@ -80,6 +90,7 @@ If the alpha is too high, the steps are bigger, but there is a potential risk of
 However, a very small learning rate isn´t ideal either because it takes too many steps to get to the lowest point of the cost function and this could compromise the overall efficiency of your algorithm. 
 
 Think at it as if you were trying to sintonize a radio to a certain frequence. Let's say we start at a frequency of 2.50 hz, and the frequence of our unit is at 15.50hz, if you start adding 5 hz every time, you will never find the right frequency due to you learning rate being too high and missing your target. But if you add little steps of 0.1 hz, it could take you forever to find the right frequence.
+
 
 
 
