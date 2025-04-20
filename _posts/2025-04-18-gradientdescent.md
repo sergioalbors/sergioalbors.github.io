@@ -26,18 +26,25 @@ ${2x^2}-5=0$
 We could clearly see its minima is $4x=0$
 
 But with much more complex functions, which depend on more than 1 variable this wont' do it. 
-To apply the gradient descent method, there is 2 things we need. 
+Let's see an example to prove why we can't apply the $f'(x)=0$ rule:
 
-### the direction
+Let's assume we have a function that depends on 2 variables such as: 
 
-### learning rate
+$f(x,y)=x^2+y^2+2xy$
+
+If we do the regular method($f'(x)=0$), we'd have $2x+2y=0$, which is equivalent to $x=-y$ but this doesn't mean that x=0 minimizes the function. There is so much information missing here, this only shows that there exists a relatinoship between $x$ and $y$, but we don't know how this function changes with respect to $y$.
+
+In order to solve more complex functions, will have to figure out two things:
+### 1. the direction
+
+### 2. the learning rate
 
 ## How to know the DIRECTION of more complex functions?
 
 
-Para encontrar la direccion de máximo crecimiento de funciones más complejas que dependen de más de una variable, es necesario derivar primero respecto a una variable, luego respecto a otra, y así sucesivamente. Por ejemplo, si nuestra función de coste depende de tres variables, tendremos que calcular tres derivadas parciales, una para cada variable.
+To find the direction of maximum growth for more complex functions that depend on more than one variable, it is necessary to first differentiate with respect to one variable, then with respect to another, and so on. For example, if our cost function depends on three variables, we will need to calculate three partial derivatives, one for each variable.
 
-Las derivadas parciales permiten calcular el gradiente de una función. El gradiente es un vector que apunta en la dirección del crecimiento máximo de la función y nos indica cómo cambian los valores de la función en cada dirección.
+Partial derivatives allow us to compute the gradient of a function. The gradient is a vector that points in the direction of the function's maximum growth and indicates how the function's values change in each direction.
 
 Por ejemplo, si nuestra función coste depende de 2 variables como son x e y, 
 
@@ -54,7 +61,7 @@ Por lo tanto el gradiente de nuestra función coste será:
 $\nabla f = \left( 2, -3 \right)$
 
 
-Once we know the driection of maximum growth, (2, -3) in this case gradient descent works by taking very small steps in the opposite direction of the gradient. This small steps are the learning rate of our cost function.  
+Once we know the direction of maximum growth, (2, -3) in this case, gradient descent works by taking very small steps in the opposite direction of the gradient. This small steps are the learning rate of our cost function.  
 
 ## Learning rate
 
