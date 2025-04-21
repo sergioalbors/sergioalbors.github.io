@@ -36,7 +36,7 @@ If we do the regular method($f'(x)=0$), we'd have $2x+2y=0$, which is equivalent
 
 The equation that describes what this algorithm does is: 
 
-$d = a- &lambda *\nabla f(a)$
+$\d = a- &lambda *\nabla f(a)$
 
 where:
 
@@ -46,13 +46,18 @@ where:
 
 In order to solve complex functions with these equation, will have to figure out what the following things mean: 
 
-#### 1. the direction (gradient)
 
-#### 2. the learning rate
+##### 1. the direction (gradient)
+
+##### 2. the learning rate
 
 
 
-## How to know the DIRECTION of more complex functions?
+
+
+
+## 1.How to know the direction of more complex functions?
+
 
 
 To find the direction of maximum growth for more complex functions that depend on more than one variable, it is necessary to first differentiate with respect to one variable, then with respect to another, and so on. For example, if our cost function depends on three variables, we will need to calculate three partial derivatives, one for each variable.
@@ -81,7 +86,7 @@ Once we know the direction of maximum growth, (2, -3) in this case, gradient des
 
 Because we want to find the minima, and the gradient as we stated multiple times, gives us the maximum growth, so the opposite direction will hopefully lead us to the lowest point of the function (spoiler: if we don't skip that point).
 
-## Learning rate
+## 2.Learning rate
 
 The Learning rate determinates the size of the little jumps forward or steps taken in the opposite site of the gradient to reach the minimum. The learning rate sometimes called alpha usually has a small value. 
 
