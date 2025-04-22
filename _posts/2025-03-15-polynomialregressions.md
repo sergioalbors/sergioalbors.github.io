@@ -46,12 +46,12 @@ Polynomial regression is used when the relationship between our data samples isn
 
 
 
-## EXPLANATION
+### VAMDERMONDE EXPLANATION
 
 1. We have our number of data points, cpuld be 10 could n points. 
 2. We assume the equation that best fits the points has this form: 
 
-  $a0 + a1x + a2x^2 + a3x^3 + ... + anx^n + e$
+        $f(x) = a0 + a1x + a2x^2 + a3x^3 + ... + anx^n + e$
 
 3. With this information, we can proceed to form our vandermonde matrix to find the coefficients of this polynomial.
 
@@ -64,6 +64,8 @@ V(a_0, a_1, \dots, a_{n-1}) =
 1 & a_{n-1} & a_{n-1}^2 & \cdots & a_{n-1}^{n-1}
 \end{bmatrix}
 $$ 
+
+
 
 
 
