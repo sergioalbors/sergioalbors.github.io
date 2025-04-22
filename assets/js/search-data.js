@@ -38,7 +38,7 @@ ninja.data = [{
         
           title: "Polynomial regressions",
         
-        description: "an example of a blog post with diagrams",
+        description: "polynomial regressions explained",
         section: "Posts",
         handler: () => {
           
