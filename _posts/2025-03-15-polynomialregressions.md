@@ -2,8 +2,8 @@
 layout: post
 title: Polynomial regressions
 date: 2025-03-15
-tags: formatting diagrams
-description: an example of a blog post with diagrams
+tags: regressions lasso,ridge
+description: polynomial regressions explained
 mermaid:
   enabled: true
   zoomable: true

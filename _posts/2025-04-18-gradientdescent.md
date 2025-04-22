@@ -2,7 +2,7 @@
 layout: post
 title: GRADIENT DESCENT
 date: 2025-04-18
-tags: formatting diagrams
+tags:  gradientdescent
 description: a basic explanation about gradient descent and it's possible aplications
 mermaid:
   enabled: true
