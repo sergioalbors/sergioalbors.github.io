@@ -99,7 +99,7 @@ $$
 \prod_{1 \le i < j \le n} (x_j - x_i)
 $$
 
-
+Once we have the coefficients of our polynomial, we will have found the equation that best fits our data samples. Here is an example in python code: 
 
 
 
