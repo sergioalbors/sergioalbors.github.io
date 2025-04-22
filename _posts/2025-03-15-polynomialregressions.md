@@ -31,7 +31,7 @@ quadratic:-         $y = a0 + a1x + a2x**2$
 
 nth grade:-       $y = a0 + a1x + a2x**2 + ... +  anx**n$
 
-Why is polynomial regression so important?
+### Why is polynomial regression so important?
 
 Let's consider a case of simple linear regression: 
 
