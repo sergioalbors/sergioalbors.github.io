@@ -45,11 +45,12 @@ As we can see in the picture above, the linear model has very poor performance, 
 Polynomial regression is used when the relationship between our data samples isn't ineal, and consequently the data samples form a kind of curve or multiple curves that cannot be fitted with a straight line. 
 
 
+
 ### SQUARED SYSTEM WITH N POINTS AND N UNKNOWNS
 
 We will only be able to apply this method if the xi are different and our polynomial i a degree less than the number of points (n-1), the our vandermonde matrix will be invertible.
 
-## VAMDERMONDE EXPLANATION
+#### VAMDERMONDE EXPLANATION
 
 1. We have our number of data points, could be 10 could be n points. 
 2. We assume the equation that best fits the points has this form: 
@@ -99,7 +100,9 @@ $$
 \prod_{1 \le i < j \le n} (x_j - x_i)
 $$
 
-Once we have the coefficients of our polynomial, we will have found the equation that best fits our data samples. Here is an example in python code: 
+Once we have the coefficients of our polynomial, we will have found the equation that best fits our data samples. Here is an example implementeed in python code: 
+
+Let's say we want to model 
 
 
 
