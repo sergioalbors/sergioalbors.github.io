@@ -83,7 +83,9 @@ $$
 5. If we want to figure out the values of the coefficients of our polynomial, then what we want is the X, the matrix of coefficients. 
 
 Solving the previous equation would lead to:
-$VA=Y$ = $V^-1Y=A$
+$VA=Y$ = 
+
+= $V^-1Y=A$
 
 Where $V^-1$ = the inverse of our vandermonde matrix
 
@@ -102,11 +104,28 @@ $$
 
 Once we have the coefficients of our polynomial, we will have found the equation that best fits our data samples. Here is an example implementeed in python code: 
 
-Let's say we want to model 
+Let's say we want to create a function that best fits our 20 points, so our polynomial will have  
 
 
 
+import numpy as np 
+import matplotlib.pyplot as plt
+n = 4
+x = np.random.uniform(-100, 100, n)
+y = np.random.uniform(-100,100, n) 
+#a = np.polyfit(x, y, n-1)
 
+V = np.vander(x, N=len(x), increasing = False)
+a = np.linalg.solve(V, y)
+polinomio = np.poly1d(a)
+
+x_fit = np.linspace(min(x), max(x), 100)
+y_fit = polinomio(x_fit)
+
+plt.scatter(x, y)
+plt.plot(x_fit, y_fit)
+plt.show()
+print(polinomio)
 
 
 
