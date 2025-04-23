@@ -109,22 +109,33 @@ Let's say we want to create a function that best fits our 20 points, so our func
 
 
 import numpy as np                # math library 
+
 import matplotlib.pyplot as plt   # library to graph function
+
 n = 20                            # number of data samples
+
 x = np.random.uniform(-100, 100, n)   # creates n dots randomly between (-100,100)
+
 y = np.random.uniform(-100,100, n)    # the same but with y
+
 #a = np.polyfit(x, y, n-1)          
 
 V = np.vander(x, N=len(x), increasing = False)  # creates our vandermonde matrix with our inputs (xs and ys)
+
 a = np.linalg.solve(V, y)  # solves VA = Y
+
 polinomio = np.poly1d(a)   # creates our polynomial with the info above
 
 x_fit = np.linspace(min(x), max(x), 100)
+
 y_fit = polinomio(x_fit)
 
 plt.scatter(x, y)         # places the dots on a graph
+
 plt.plot(x_fit, y_fit)    # connects our points
+
 plt.show()
+
 print(polinomio)      # prints our polynomial on the terminal
 
 
