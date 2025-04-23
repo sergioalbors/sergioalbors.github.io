@@ -31,6 +31,29 @@ quadratic:-         $y = a0 + a1x + a2x**2$
 
 nth grade:-       $y = a0 + a1x + a2x**2 + ... +  anx**n$
 
+
+### OVERFITTING VS UNDERFITTING 
+
+There is a very important concept we have to bring into consideration when doing a regression especially a high order one. Let's see the difference between these 2 concepts and how they affect the error of our regression. 
+
+##### Overftting
+
+Overfitting appears when our model has too many parameters and learns too much from the training data, including learning from details that aren't relevant, like noise. 
+This model fits very well our training data samples but sticks too much to them failing to make a good prediction of the new data. 
+
+See it as a student that prepares for a test memorizing the answers of the last exam without understanding the topic, it will do very good on the exam he has memorized, but in the actual exam he will get a very low score because he sticks too much to the training data. 
+
+##### Underfitting 
+
+Underfitting is the opposite of overfitting. Instead of being too complex, underfitting appears when a model is too simple to capture what is really going on with the data. 
+
+If we tried to do a linear regression on data that forms a curve, our prediction line, would fit awfully our points right? The line would miss a lot of points. 
+
+If a student doesn't study at all, he will score poorly both on the actual exam and the practice exams.
+
+
+![alt text](image.png)
+
 ### Why is polynomial regression so important?
 
 Let's consider a case of simple linear regression: 
