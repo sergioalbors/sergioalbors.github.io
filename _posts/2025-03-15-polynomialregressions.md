@@ -60,6 +60,8 @@ If we tried to do a linear regression on data that forms a curve, our prediction
 
 If a student doesn't study at all, he will score poorly both on the actual exam and the practice exams.
 
+ways to avoid underfitting: 
+- increase complexity of our prediction
 
 ![alt text](image.png)
 
