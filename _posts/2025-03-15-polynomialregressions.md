@@ -34,7 +34,16 @@ nth grade:-       $y = a0 + a1x + a2x**2 + ... +  anx**n$
 
 ### OVERFITTING VS UNDERFITTING 
 
-There is a very important concept we have to bring into consideration when doing a regression especially a high order one. Let's see the difference between these 2 concepts and how they affect the error of our regression. 
+The first thing we need to have clear is what is considered in the ml world as a good predicting model: 
+if our model does the following things it can be considered good: 
+
+- our model avoids underfitting and overfitting
+
+- adapts well to new/unseen data
+
+- brings the error/cost function very close to 0 (closely matches real value with the predicted one)
+
+Let's get into what the first point means and how can we avoid that.
 
 ##### Overftting
 
