@@ -141,36 +141,93 @@ Once we have the coefficients of our polynomial, we will have found the equation
 Let's say we want to create a function that best fits our 20 points, so our function will be a 19th degree polynomial. 
 
 
+$$
+\text{Matriz } M(V^{-1}) =
+$$
 
-import numpy as np                # math library 
+$$
+\left(
+\begin{array}{cccc}
+x_1^n & x_1^{n-1} & \cdots & x_1^0 \\
+x_2^n & x_2^{n-1} & \cdots & x_2^0 \\
+x_3^n & x_3^{n-1} & \cdots & x_3^0 \\
+\vdots & \vdots & \ddots & \vdots \\
+x_m^n & x_m^{n-1} & \cdots & x_m^0
+\end{array}
+\right)
+$$
 
-import matplotlib.pyplot as plt   # library to graph function
+---
 
-n = 20                            # number of data samples
+**Aproximado:** \( A \vec{a} = \vec{z} \)
 
-x = np.random.uniform(-100, 100, n)   # creates n dots randomly between (-100,100)
+donde:
 
-y = np.random.uniform(-100,100, n)    # the same but with y
+- Grado polinomio de \( n-1 \) (menos 1)
+- Entonces el grado es \( n \).
 
-#a = np.polyfit(x, y, n-1)          
+---
 
-V = np.vander(x, N=len(x), increasing = False)  # creates our vandermonde matrix with our inputs (xs and ys)
+**Sistema:**
 
-a = np.linalg.solve(V, y)  # solves VA = Y
+\[
+\begin{aligned}
+a_0 + a_1x_0 + a_2x_0^2 &= z_0 \\
+a_0 + a_1x_1 + a_2x_1^2 &= z_1 \\
+a_0 + a_1x_2 + a_2x_2^2 &= z_2
+\end{aligned}
+\]
 
-polinomio = np.poly1d(a)   # creates our polynomial with the info above
+---
 
-x_fit = np.linspace(min(x), max(x), 100)
+Matriz \( A \):
 
-y_fit = polinomio(x_fit)
+$$
+V =
+\left(
+\begin{array}{ccc}
+1 & x_0 & x_0^2 \\
+1 & x_1 & x_1^2 \\
+1 & x_2 & x_2^2
+\end{array}
+\right)
+$$
 
-plt.scatter(x, y)         # places the dots on a graph
+---
 
-plt.plot(x_fit, y_fit)    # connects our points
+**Vector de incógnitas:**
 
-plt.show()
+\[
+\vec{a} = (a_0, a_1, a_2)
+\]
 
-print(polinomio)      # prints our polynomial on the terminal
+---
+
+**Vector de resultados:**
+
+\[
+\vec{z} = (z_0, z_1, z_2)
+\]
+
+---
+
+**Resolvemos:** \( A \vec{a} = \vec{z} \)
+
+Los coeficientes del polinomio de grado \( n \).
+
+---
+
+**Inversa de Vandermonde:**
+
+\[
+V^{-1} = \frac{\text{Adj}(V)}{\det(V)}
+\]
+
+## BUT WHAT HAPPENS WHEN OUR DATA LEADS TO AN IRREVERSIBLE MATRIX
+
+If our training points, lead to a matrix with no inverse, due to two points being equal... for any reason, there are other ways to solve this problem and accomplish a sucessfull regression model. 
+
+
 
 
 
