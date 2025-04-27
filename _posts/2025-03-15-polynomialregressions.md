@@ -171,7 +171,7 @@ donde:
 ---
 
 **Sistema:**
-
+$
 \[
 \begin{aligned}
 a_0 + a_1x_0 + a_2x_0^2 &= z_0 \\
@@ -179,7 +179,7 @@ a_0 + a_1x_1 + a_2x_1^2 &= z_1 \\
 a_0 + a_1x_2 + a_2x_2^2 &= z_2
 \end{aligned}
 \]
-
+$
 ---
 
 Matriz \( A \):
@@ -198,32 +198,34 @@ $$
 ---
 
 **Vector de incógnitas:**
-
+$
 \[
 \vec{a} = (a_0, a_1, a_2)
 \]
-
+$
 ---
 
 **Vector de resultados:**
 
+$
 \[
 \vec{z} = (z_0, z_1, z_2)
 \]
-
+$
 ---
 
-**Resolvemos:** \( A \vec{a} = \vec{z} \)
+**Resolvemos:** $\( A \vec{a} = \vec{z} \)$
 
 Los coeficientes del polinomio de grado \( n \).
 
 ---
 
 **Inversa de Vandermonde:**
-
+$
 \[
 V^{-1} = \frac{\text{Adj}(V)}{\det(V)}
 \]
+$
 
 ## BUT WHAT HAPPENS WHEN OUR DATA LEADS TO AN IRREVERSIBLE MATRIX
 
