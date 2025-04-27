@@ -138,7 +138,9 @@ $$
 
 Once we have the coefficients of our polynomial, we will have found the equation that best fits our data samples. Here is an example implementeed in python code: 
 
-Let's say we want to create a function that best fits our 20 points, so our function will be a 19th degree polynomial. 
+Let's say we want to create a function that best fits our 20 points, so our function will be a 19th degree polynomial.
+
+Let's see an example done in paper with 3 points and a quadratic equation:
 
 
 $$
