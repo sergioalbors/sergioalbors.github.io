@@ -31,37 +31,7 @@ quadratic:-         $y = a0 + a1x + a2x**2$
 
 nth grade:-       $y = a0 + a1x + a2x**2 + ... +  anx**n$
 
-
-### OVERFITTING VS UNDERFITTING 
-
-The first thing we need to have clear is what is considered in the ml world as a good predicting model: 
-if our model does the following things it can be considered good: 
-
-- our model avoids underfitting and overfitting
-
-- adapts well to new/unseen data
-
-- brings the error/cost function very close to 0 (closely matches real value with the predicted one)
-
-Let's get into what the first point means and how can we avoid that.
-
-##### Overftting
-
-Overfitting appears when our model has too many parameters and learns too much from the training data, including learning from details that aren't relevant, like noise. 
-This model fits very well our training data samples but sticks too much to them failing to make a good prediction of the new data. 
-
-See it as a student that prepares for a test memorizing the answers of the last exam without understanding the topic, it will do very good on the exam he has memorized, but in the actual exam he will get a very low score because he sticks too much to the training data. 
-
-##### Underfitting 
-
-Underfitting is the opposite of overfitting. Instead of being too complex, underfitting appears when a model is too simple to capture what is really going on with the data. 
-
-If we tried to do a linear regression on data that forms a curve, our prediction line, would fit awfully our points right? The line would miss a lot of points. 
-
-If a student doesn't study at all, he will score poorly both on the actual exam and the practice exams.
-
-ways to avoid underfitting: 
-- increase complexity of our prediction
+With this being said, we suppose our equation has n degrees and we want to minimize the error between the training data and the predicted values, ideally we'd like our error to be 0, this would mean we've built a regression model with 100% accuracy or that our function doesn't have any gausian noise. 
 
 ![alt text](image.png)
 
@@ -78,11 +48,13 @@ As we can see in the picture above, the linear model has very poor performance, 
 
 Polynomial regression is used when the relationship between our data samples isn't ineal, and consequently the data samples form a kind of curve or multiple curves that cannot be fitted with a straight line. 
 
+## 3 casos
 
 
-### SQUARED SYSTEM WITH N POINTS AND N UNKNOWNS
+### VANDERMONDE(sistema cuadrado n puntos---polinomio n-1)
 
-We will only be able to apply this method if the xi are different and our polynomial i a degree less than the number of points (n-1), the our vandermonde matrix will be invertible.
+
+We will only be able to apply this method if the xi are different and our polynomial is a degree less than the number of points (n-1), then our matrix will be invertible.
 
 #### VAMDERMONDE EXPLANATION
 
@@ -143,95 +115,42 @@ Let's say we want to create a function that best fits our 20 points, so our func
 Let's see an example done in paper with 3 points and a quadratic equation:
 
 
-$$
-\text{Matriz } M(V^{-1}) =
-$$
-
-$$
-\left(
-\begin{array}{cccc}
-x_1^n & x_1^{n-1} & \cdots & x_1^0 \\
-x_2^n & x_2^{n-1} & \cdots & x_2^0 \\
-x_3^n & x_3^{n-1} & \cdots & x_3^0 \\
-\vdots & \vdots & \ddots & \vdots \\
-x_m^n & x_m^{n-1} & \cdots & x_m^0
-\end{array}
-\right)
-$$
-
----
-
-**Aproximado:** \( A \vec{a} = \vec{z} \)
-
-donde:
-
-- Grado polinomio de \( n-1 \) (menos 1)
-- Entonces el grado es \( n \).
-
----
-
-**Sistema:**
-$
-\[
-\begin{aligned}
-a_0 + a_1x_0 + a_2x_0^2 &= z_0 \\
-a_0 + a_1x_1 + a_2x_1^2 &= z_1 \\
-a_0 + a_1x_2 + a_2x_2^2 &= z_2
-\end{aligned}
-\]
-$
----
-
-Matriz \( A \):
-
-$$
-V =
-\left(
-\begin{array}{ccc}
-1 & x_0 & x_0^2 \\
-1 & x_1 & x_1^2 \\
-1 & x_2 & x_2^2
-\end{array}
-\right)
-$$
-
----
-
-**Vector de incógnitas:**
-$
-\[
-\vec{a} = (a_0, a_1, a_2)
-\]
-$
----
-
-**Vector de resultados:**
-
-$
-\[
-\vec{z} = (z_0, z_1, z_2)
-\]
-$
----
-
-**Resolvemos:** $\( A \vec{a} = \vec{z} \)$
-
-Los coeficientes del polinomio de grado \( n \).
-
----
-
-**Inversa de Vandermonde:**
-$
-\[
-V^{-1} = \frac{\text{Adj}(V)}{\det(V)}
-\]
-$
-
-## BUT WHAT HAPPENS WHEN OUR DATA LEADS TO AN IRREVERSIBLE MATRIX
-
-If our training points, lead to a matrix with no inverse, due to two points being equal... for any reason, there are other ways to solve this problem and accomplish a sucessfull regression model. 
+### (X TX)^−1X^TY --- más puntos que coeficientes
 
 
+#### OVERFITTING VS UNDERFITTING 
+
+The first thing we need to have clear is what is considered in the ml world as a good predicting model: 
+if our model does the following things it can be considered good: 
+
+- our model avoids underfitting and overfitting
+
+- adapts well to new/unseen data
+
+- brings the error/cost function very close to 0 (closely matches real value with the predicted one)
+
+Let's get into what the first point means and how can we avoid that.
+
+##### Overftting
+
+Overfitting appears when our model has too many parameters and learns too much from the training data, including learning from details that aren't relevant, like noise. 
+This model fits very well our training data samples but sticks too much to them failing to make a good prediction of the new data. 
+
+See it as a student that prepares for a test memorizing the answers of the last exam without understanding the topic, it will do very good on the exam he has memorized, but in the actual exam he will get a very low score because he sticks too much to the training data. 
+
+##### Underfitting 
+
+Underfitting is the opposite of overfitting. Instead of being too complex, underfitting appears when a model is too simple to capture what is really going on with the data. 
+
+If we tried to do a linear regression on data that forms a curve, our prediction line, would fit awfully our points right? The line would miss a lot of points. 
+
+If a student doesn't study at all, he will score poorly both on the actual exam and the practice exams.
+
+ways to avoid underfitting: 
+- increase complexity of our prediction
+
+
+### Regularizacion menos puntos que coeficientes -- Ridge/Lasso 
 
 
 
