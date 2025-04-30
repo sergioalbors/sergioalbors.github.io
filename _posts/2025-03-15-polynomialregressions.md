@@ -33,6 +33,12 @@ nth grade:-       $y = a0 + a1x + a2x**2 + ... +  anx**n$
 
 With this being said, we suppose our equation has n degrees and we want to minimize the error between the training data and the predicted values, ideally we'd like our error to be 0, this would mean we've built a regression model with 100% accuracy or that our function doesn't have any gausian noise. 
 
+So the we are seeking to minimize ( get as close to 0 as we can) the following: 
+
+$$
+E = \sum_{i=1}^m \left( y_i - \hat{y}(x_i) \right)^2
+$$
+
 ![alt text](image.png)
 
 ### Why is polynomial regression so important?
