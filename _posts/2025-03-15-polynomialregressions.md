@@ -11,6 +11,8 @@ mermaid:
 
 ## GETTING STARTED
 
+aliuf `weSDV`9UQ`W9s9ù  9ÈC9ÙB9Uà98hd w9eNA 	N
+
 This page is written to teach people or give an idea about what regressions are used for, there mathematical baground and it's appliances in our day to day. 
 
 A regression is a mathematical analysis method used to predict the outcome of future events between other things. What it does, it estimates the relationship between a dependent variable and one or more independent variables. This can be used to make predictions of the future. 
