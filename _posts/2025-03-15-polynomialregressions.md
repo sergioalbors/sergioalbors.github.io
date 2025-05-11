@@ -157,6 +157,7 @@ ways to avoid underfitting:
 - increase complexity of our prediction
 
 ![alt text](/assets/img/image.png)
+
 ### Regularizacion menos puntos que coeficientes -- Ridge/Lasso 
 
 
