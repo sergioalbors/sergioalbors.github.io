@@ -11,7 +11,6 @@ mermaid:
 
 ## GETTING STARTED
 
-aliuf `weSDV`9UQ`W9s9ù  9ÈC9ÙB9Uà98hd w9eNA 	N
 
 This page is written to teach people or give an idea about what regressions are used for, there mathematical baground and it's appliances in our day to day. 
 
@@ -31,7 +30,7 @@ linear:-               $y = a0 + a1x$
 
 quadratic:-         $y = a0 + a1x + a2x**2$
 
-nth grade:-       $y = a0 + a1x + a2x**2 + ... +  anx**n$
+nth grade:-       $y = a0 + a1x + a2x**2$ $+ ... +  $anx**n$
 
 With this being said, we suppose our equation has n degrees and we want to minimize the error between the training data and the predicted values, ideally we'd like our error to be 0, this would mean we've built a regression model with 100% accuracy or that our function doesn't have any gausian noise. 
 
@@ -41,7 +40,8 @@ $$
 E = \sum_{i=1}^m \left( y_i - \hat{y}(x_i) \right)^2
 $$
 
-![alt text]("C:\Users\sergi\Desktop\github.io\sergioalbors.github.io\assets\img\image.png")
+![alt text](/assets/img/image.png)
+
 
 ### Why is polynomial regression so important?
 
