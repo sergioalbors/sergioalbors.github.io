@@ -39,7 +39,7 @@ $$
 E = \sum_{i=1}^m \left( y_i - \hat{y}(x_i) \right)^2
 $$
 
-![alt text](image.png)
+![alt text]("C:\Users\sergi\Desktop\github.io\sergioalbors.github.io\assets\img\image.png")
 
 ### Why is polynomial regression so important?
 
