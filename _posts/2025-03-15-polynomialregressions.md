@@ -40,14 +40,13 @@ $$
 E = \sum_{i=1}^m \left( y_i - \hat{y}(x_i) \right)^2
 $$
 
-![alt text](/assets/img/image.png)
+
 
 
 ### Why is polynomial regression so important?
 
 Let's consider a case of simple linear regression: 
 
-IMAGEIMAGEIMAGEIMAGEsn vabpidàn`dunaO`<
 
 linear vs polynomial
 
@@ -157,7 +156,7 @@ If a student doesn't study at all, he will score poorly both on the actual exam 
 ways to avoid underfitting: 
 - increase complexity of our prediction
 
-
+![alt text](/assets/img/image.png)
 ### Regularizacion menos puntos que coeficientes -- Ridge/Lasso 
 
 
