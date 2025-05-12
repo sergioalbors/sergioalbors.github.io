@@ -90,12 +90,13 @@ Because we want to find the minima, and the gradient as we stated multiple times
 
 The Learning rate determinates the size of the little jumps forward or steps taken in the opposite site of the gradient to reach the minimum. The learning rate sometimes called alpha usually has a small value. 
 
-If the alpha is too high, the steps are bigger, but there is a potential risk of overshooting the minimum and skipping it. 
+If the alpha is too high, the steps are bigger, but there is a potential risk of overshooting the minimum point and skipping it. 
 
 However, a very small learning rate isn´t ideal either because it takes too many steps to get to the lowest point of the cost function and this could compromise the overall efficiency of your algorithm. 
 
 Think at it as if you were trying to sintonize a radio to a certain frequence. Let's say we start at a frequency of 2.50 hz, and the frequence of our unit is at 15.50hz, if you start adding 5 hz every time, you will never find the right frequency due to you learning rate being too high and missing your target. But if you add little steps of 0.1 hz, it could take you forever to find the right frequence.
 
+![alt text](/assets/img/learningrate.png)
 
 
 
