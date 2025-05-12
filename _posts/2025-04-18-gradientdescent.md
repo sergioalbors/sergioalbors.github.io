@@ -36,7 +36,8 @@ If we do the regular method($f'(x)=0$), we'd have $2x+2y=0$, which is equivalent
 
 The equation that describes what this algorithm does is: 
 
-$\d = a- &lambda *\nabla f(a)$
+$\mathbf{d} = \mathbf{a} - \lambda \nabla f(\mathbf{a})$
+
 
 where:
 

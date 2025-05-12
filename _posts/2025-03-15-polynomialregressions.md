@@ -28,9 +28,10 @@ This polynomials can go from a 1st degree polynomial to a nth degree polynomial:
 
 linear:-               $y = a0 + a1x$
 
-quadratic:-         $y = a0 + a1x + a2x**2$
+quadratic:-         $y = a0 + a1x + a2x^2$
 
-nth grade:-       $y = a0 + a1x + a2x**2$ $+ ... +  $anx**n$
+nth grade:-      $y = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n$
+
 
 With this being said, we suppose our equation has n degrees and we want to minimize the error between the training data and the predicted values, ideally we'd like our error to be 0, this would mean we've built a regression model with 100% accuracy or that our function doesn't have any gausian noise. 
 
