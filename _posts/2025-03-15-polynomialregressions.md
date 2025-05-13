@@ -12,7 +12,7 @@ mermaid:
 ## GETTING STARTED
 
 
-This page is written to teach people or give an idea about what regressions are used for, there mathematical baground and it's appliances in our day to day. 
+This page is written to teach people or give an idea about what regressions are used for, there mathematical baground and it's appliances in our day to day.  You can find the python implementation code of everything talked about in this blog here¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
 
 A regression is a mathematical analysis method used to predict the outcome of future events between other things. What it does, it estimates the relationship between a dependent variable and one or more independent variables. This can be used to make predictions of the future. 
 
@@ -173,8 +173,8 @@ In linear regression we use least squares seeking the values of the coefficients
 
 Ridge Regression's objective is to minimize:   $\sum_{i=1}^{n} (y_i - x_i^T w)^2 + \lambda_1 \|w\|_1 + \lambda_2 \|w\|_2^2$
 
-Very similarly, ridge seeks the same thing but with a new concept added to the equation, something called penalty. 
+Very similarly, the ridge model seeks the same thing but with a new concept added to the equation, something called penalty. 
 Ridge regression adds a regularization term that helps our model prevent overfitting by penalizing large coeffcicients nad sticking to smaller ones in order to stabilize the model. 
 
-
+This penalty 
 
