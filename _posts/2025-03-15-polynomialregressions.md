@@ -160,15 +160,21 @@ ways to avoid underfitting:
 ![alt text](/assets/img/image.png)
 
 ### Regularizacion menos puntos que coeficientes -- Ridge/Lasso 
+LASSO 
+
 
 RIDGE 
+
 regularization imposes "simple" solutions by a complex penalty. 
 
-Least squares objective is to minimize: $\sum_{i=1}^{n} (y_i - x_i^T w)^2$
-Ridge Regression's objective is to minimize: $\sum_{i=1}^{n} (y_i - x_i^T w)^2 + \lambda_1 \|w\|_1 + \lambda_2 \|w\|_2^2$
+Least squares objective is to minimize:    $\sum_{i=1}^{n} (y_i - x_i^T w)^2$
 
-See the difference? We are adding a "penalty" to our initial equation. 
+In linear regression we use least squares seeking the values of the coefficients that minimize the resiudal sum of Squares.  
 
+Ridge Regression's objective is to minimize:   $\sum_{i=1}^{n} (y_i - x_i^T w)^2 + \lambda_1 \|w\|_1 + \lambda_2 \|w\|_2^2$
+
+Very similarly, ridge seeks the same thing but with a new concept added to the equation, something called penalty. 
+Ridge regression adds a regularization term that helps our model prevent overfitting by penalizing large coeffcicients nad sticking to smaller ones in order to stabilize the model. 
 
 
 
