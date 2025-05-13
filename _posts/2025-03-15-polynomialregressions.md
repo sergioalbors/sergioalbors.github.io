@@ -161,8 +161,13 @@ ways to avoid underfitting:
 
 ### Regularizacion menos puntos que coeficientes -- Ridge/Lasso 
 
+RIDGE 
+regularization imposes "simple" solutions by a complex penalty. 
 
+Least squares objective is to minimize: $\sum_{i=1}^{n} (y_i - x_i^T w)^2$
+Ridge Regression's objective is to minimize: $\sum_{i=1}^{n} (y_i - x_i^T w)^2 + \lambda_1 \|w\|_1 + \lambda_2 \|w\|_2^2$
 
+See the difference? We are adding a "penalty" to our initial equation. 
 
 
 
