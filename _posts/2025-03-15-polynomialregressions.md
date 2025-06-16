@@ -167,6 +167,8 @@ Overfitting is a problem that occurs when the regression model gets tuned to the
 
 LASSO (L1)
 
+In order to add a type L1 regularitzation to our model, first we'll have to understand a new concept called: Gradient descent. You can find an explanation based on what I've understood [here](https://sergioalbors.github.io/blog/2025/gradientdescent/). 
+
 
 RIDGE (L2)
 
