@@ -173,17 +173,19 @@ In order to add a type L1 regularitzation to our model, first we'll have to unde
 RIDGE (L2)
 
 
-If we drop in variance, our line will not fit the training data as good as a linear regression line, but it provides better long term predictions. 
+If we drop in variance, our line will not fit the training data as good as a linear regression line, but it provides better long term predictions. We sacrifice good adaptation to the training data in order to get a better fit on the predicited values.
 
 Let's compare the simple regression model matrix equation with the ridge regression model matrix equation to see how they differ from each other: 
 
 $$
-w = (X^T X + \lambda I)^{-1} X^T y
+w = (X^T X + \lambda I)^{-1} X^T y 
 $$
-
+this being the penalty added equation 
 $$
 w = (X^T X)^{-1} X^T y
 $$
+this being a simple linear regression
+
 
 Very similarly, the ridge model seeks the same thing but with a new concept added to the equation, something called penalty. 
 Ridge regression adds a regularization term that helps our model prevent overfitting by penalizing large coeffcicients nad sticking to smaller ones in order to stabilize the model. 
