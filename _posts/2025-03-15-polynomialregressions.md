@@ -166,6 +166,14 @@ Overfitting is a problem that occurs when the regression model gets tuned to the
 
 
 LASSO (L1)
+Lasso helps us fight overfitting by penalizing certain coefficients and shrinking them towards zero. This penalty "targets" coefficients that are least important and just add noise to our model. 
+
+
+For instance, imagine we are packing for a trip to vietnam and we are carrying only one bag and the company you are flying with doesn't allow hand baggage to weigh more than 8 kg and after packing, you find out your bag is 3 kg overweight. Eventually, you'll have to get rid of things until you meet with the weight requirements of the airline, but there are things you need and things that aren't that important. So to reduce weight you'll have to get rid of the things thst aren't crucial for your trip.
+
+
+Lasso does the same thing, targets features that aren't really important for our model and shrinks them towards 0 to make them irrelevant. If your model didn't shirnk them towards 0, it wouldn't be very accurate due to your prediction trying to fit every single variable and would end up highly overfitted resulting in a very inaccurate model.  
+
 
 In order to add a type L1 regularitzation to our model, first we'll have to understand a new concept called: Gradient descent. You can find an explanation based on what I've understood [here](https://sergioalbors.github.io/blog/2025/gradientdescent/). 
 
