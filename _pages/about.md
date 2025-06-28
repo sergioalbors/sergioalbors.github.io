@@ -27,8 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I was born and raised in Barcelona, Spain where I have lived my entire life. I initially started my bachelor’s degree in Telecommunications Engineering but soon realized it wasn’t the right fit for me, and now I've decided to pursue a career on applied maths and I hope I'll be working in finance after finishing my studies. I am looking forward on moving to the Netherlands to study applied maths and staying there for a couple years.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In my spare time, I enjoy going to the gym, training kickboxing, grappling, mountain bike and hanging out with my friends.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I will be applying to bachelor programs in mathematics soon. Here is my github, and I can be reached at sergioalborsjuez@gmail.com
