@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-polynomial-regressions",
+            },{id: "post-gradient-descent",
+        
+          title: "GRADIENT DESCENT",
+        
+        description: "a basic explanation about gradient descent and it&#39;s possible aplications",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/gradientdescent/";
+          
+        },
+      },{id: "post-polynomial-regressions",
         
           title: "Polynomial regressions",
         
