@@ -112,23 +112,36 @@ Once we have the coefficients of our polynomial, we will have found the equation
 Let's say we want to create a function that best fits our 20 points, so our function will be a 19th degree polynomial.
 
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 n = 10
+
 x = np.random.uniform(-100, 100, n)
+
 y = np.random.uniform(-100, 100, n)
+
 a = np.polyfit(x, y, n-1)
 
 V = np.vander(x, N=len(x), increasing = False) # we create our vandermonde matrix
+
 v\*a=y # we represent our system of linear equations
+
 a = np.linalg.solve(V, y) # we solve our system
+
 polinomio = np.poly1d(a) # a = coefficients of our polynomial
 
+
 x_fit = np.linspace(min(x), max(x), 100) # we generate a set of points to plot
+
 y_fit = polinomio(x_fit)
 
 plt.scatter(x, y, color = 'red')
+
 plt.plot(x_fit, y_fit)
+
 plt.show()
+
 print(polinomio)
 
 Here is the result in pyhton:
@@ -215,29 +228,45 @@ Ridge regression adds a regularization term that helps our model prevent overfit
 Let's see an example implemented in python code:
 
 import numpy as np
+
 import matplotlib.pyplot as plt
 
 n = 100
+
 np.random.seed(42)
+
 x = np.random.uniform(-2, 2, n)
+
 x = np.sort(x)
 
 def f(x): # the function we'll be using
+
 return np.sin(2*x)
+
 y = f(x)
+
 y_t = f(x) + 10*np.random.randn(n) # we add some gaussian noise to our function
+
 degree = 4
+
 X = np.vstack([x**i for i in range(degree + 1)]).T # create our matrix
+
 alpha = 10 # the "severeness" of our penalty
 
 I = np.eye(X.shape[1]) # we form our matrix n x n
+
 I[0, 0] = 0 # we avoid penalizing the constant value of our model
+
 r4 = np.matmul(np.linalg.inv(np.matmul(X.T, X) + alpha \* I ),np.matmul(X.T, y_t)) # we solve the equation mentioned above
+
 yh4 = np.matmul(X, r4) # multiply our matrix by the result of the equation above to get the coefficients
 
 plt.scatter(x, y, label = 'data')
+
 plt.plot(x, yh4, color = 'red', label = 'predicted values')
+
 plt.legend()
+
 plt.show()
 
 ### Choosing the correct value for lambda
