@@ -148,7 +148,7 @@ Here is the result in pyhton:
 
 ![alt text](/assets/img/vandermonde2r.png)
 
-and the polynomial which is shown at the terminal ( if there is no terminal you can press ctrl + j) is:
+and the polynomial shown at the terminal ( if there is no terminal you can press ctrl + j) is:
 
 
 ![alt text](/assets/img/polynomialreduced.png)
