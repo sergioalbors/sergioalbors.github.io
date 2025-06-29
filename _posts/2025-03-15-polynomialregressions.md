@@ -11,7 +11,7 @@ mermaid:
 
 ## GETTING STARTED
 
-This page is written to teach people or give an idea about what regressions are used for, there mathematical baground and it's appliances in our day to day. You can find the python implementation code of everything talked about below the theory explanations.
+This page is written to teach people or give an idea about what regressions are used for, their mathematical baground and its appliances in our day to day. You can find the python implementation code of everything talked about below the theory explanations.
 
 A regression is a mathematical analysis method used to predict the outcome of future events between other things. What it does, it estimates the relationship between a dependent variable and one or more independent variables. This can be used to make predictions of the future.
 
@@ -51,11 +51,11 @@ As we can see in the picture above, the linear model has very poor performance, 
 
 Polynomial regression is used when the relationship between our data samples isn't ineal, and consequently the data samples form a kind of curve or multiple curves that cannot be fitted with a straight line.
 
-### VANDERMONDE(Square system woth n points --- Polynomial of degree n-1)
+### VANDERMONDE(Square system with n points --- Polynomial of degree n-1)
 
 We will only be able to apply this method if the xi are different and our polynomial is a degree less than the number of points (n-1), then our matrix will be invertible.
 
-#### VAMDERMONDE EXPLANATION
+#### VANDERMONDE EXPLANATION
 
 1. We have our number of data points, could be 10 could be n points.
 2. We assume the equation that best fits the points has this form:
