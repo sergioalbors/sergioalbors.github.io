@@ -3,7 +3,7 @@ layout: post
 title: GRADIENT DESCENT
 date: 2025-04-18
 tags: gradientdescent
-description: a basic explanation about gradient descent and it's possible aplications
+description: a basic explanation about gradient descent and it's possible applications
 mermaid:
   enabled: true
   zoomable: true
