@@ -27,7 +27,7 @@ ninja.data = [{
         
           title: "GRADIENT DESCENT",
         
-        description: "a basic explanation about gradient descent and it&#39;s possible aplications",
+        description: "a basic explanation about gradient descent and it&#39;s possible applications",
         section: "Posts",
         handler: () => {
           
