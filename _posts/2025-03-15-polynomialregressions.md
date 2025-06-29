@@ -148,9 +148,10 @@ Here is the result in pyhton:
 
 ![alt text](/assets/img/vandermonde2.png)
 
-and the polynomial which is shown at the terminal ( if there is no terminal you can press ctrl + j):
+and the polynomial which is shown at the terminal ( if there is no terminal you can press ctrl + j) is:
 
-![alt text](/assets/img/polynomial.png)
+
+![alt text](/assets/img/polynomialreduced.png)
 
 ### (X TX)^−1X^TY --- More points than coefficients
 
