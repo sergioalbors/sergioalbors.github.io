@@ -18,23 +18,12 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "last upadted on June 2025",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-gradient-descent",
-        
-          title: "GRADIENT DESCENT",
-        
-        description: "a basic explanation about gradient descent and it&#39;s possible applications",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/gradientdescent/";
-          
-        },
-      },{id: "post-polynomial-regressions",
+        },{id: "post-polynomial-regressions",
         
           title: "Polynomial regressions",
         
@@ -43,6 +32,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2025/polynomialregressions/";
+          
+        },
+      },{id: "post-gradient-descent",
+        
+          title: "GRADIENT DESCENT",
+        
+        description: "a basic explanation about gradient descent and it&#39;s possible applications",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/gradientdescent/";
           
         },
       },{
