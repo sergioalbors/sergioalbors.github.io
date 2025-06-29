@@ -51,7 +51,7 @@ As we can see in the picture above, the linear model has very poor performance, 
 
 Polynomial regression is used when the relationship between our data samples isn't ineal, and consequently the data samples form a kind of curve or multiple curves that cannot be fitted with a straight line.
 
-### VANDERMONDE(Square system with n points --- Polynomial of degree n-1)
+### VANDERMONDE (Square system with n points, Polynomial of degree n-1)
 
 We will only be able to apply this method if the xi are different and our polynomial is a degree less than the number of points (n-1), then our matrix will be invertible.
 
