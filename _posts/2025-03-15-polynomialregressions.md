@@ -151,8 +151,7 @@ Here is the result in pyhton:
 and the polynomial shown at the terminal ( if there is no terminal you can press ctrl + j) is:
 
 
-![alt text](/assets/img/polynomiavl.png)
-
+![alt text](/assets/img/polynomialv.png)
 ### (X TX)^−1X^TY --- More points than coefficients
 
 #### OVERFITTING VS UNDERFITTING
