@@ -157,7 +157,7 @@ and the polynomial shown at the terminal ( if there is no terminal you can press
 
 #### OVERFITTING VS UNDERFITTING
 
-The first thing we need to have clear is what is considered in the ml world as a good predicting model:
+The first thing we need to have clear is what is considered in the machine learning world as a good predicting model:
 if our model does the following things it can be considered good:
 
 - our model avoids underfitting and overfitting
