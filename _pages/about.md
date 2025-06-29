@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: profilepic.jpg
+  image: sergioluffy.jpg
   image_circular: false # crops the image to make it circular
   more_info: .
 
