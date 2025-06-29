@@ -45,7 +45,7 @@ Let's consider a case of simple linear regression:
 
 linear vs polynomial
 
-![alt text](/assets/img/img/linearvspolynomial.png)
+![alt text](/assets/img/linearvspolynomial.png)
 
 As we can see in the picture above, the linear model has very poor performance, whereas the polynomial model has a much better adjustment and consequently, will have a lower error.
 
@@ -146,11 +146,11 @@ print(polinomio)
 
 Here is the result in pyhton:
 
-![alt text](/assets/img/img/vandermonde2.png)
+![alt text](/assets/img/vandermonde2.png)
 
 and the polynomial which is shown at the terminal ( if there is no terminal you can press ctrl + j):
 
-![alt text](/assets/img/img/polynomial.png)
+![alt text](/assets/img/polynomial.png)
 
 ### (X TX)^−1X^TY --- More points than coefficients
 
