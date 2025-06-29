@@ -146,12 +146,12 @@ print(polinomio)
 
 Here is the result in pyhton:
 
-![alt text](/assets/img/vandermonde2r.png)
+![alt text](/assets/img/vandermonde.png)
 
 and the polynomial shown at the terminal ( if there is no terminal you can press ctrl + j) is:
 
 
-![alt text](/assets/img/polynomialreduced.png)
+![alt text](/assets/img/polynomial.png)
 
 ### (X TX)^−1X^TY --- More points than coefficients
 
