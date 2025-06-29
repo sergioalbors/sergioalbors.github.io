@@ -23,8 +23,8 @@ announcements:
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 2 # leave blank to include all the blog posts
 ---
 
 I was born and raised in Barcelona, Spain where I have lived my entire life. I initially started my bachelor’s degree in Telecommunications Engineering but soon realized it wasn’t the right fit for me, and now I've decided to pursue a career on applied maths and I hope I'll be working in finance after finishing my studies. I am looking forward on moving to the Netherlands to study applied maths and staying there for a couple years.
