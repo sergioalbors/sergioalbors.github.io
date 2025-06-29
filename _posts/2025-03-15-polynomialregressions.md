@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Polynomial regressions
-date: 2025-03-15
+date: 2025-05-15
 tags: regressions lasso,ridge
 description: polynomial regressions explained
 mermaid:
@@ -191,15 +191,15 @@ ways to avoid underfitting:
 
 ### Regularization less points than coefficients -- Ridge/Lasso
 
-A very useful way too fight or overcome overfitting problems in our models is to add a regularization. There are plenty of types but we will cover the 2 principal regularizations, L2 and L1.
+A very useful way to fight or overcome overfitting problems in our models is to add a regularization. There are plenty of types but we will cover the 2 principal regularizations, L2 and L1.
 
-Overfitting is a problem that occurs when the regression model gets tuned to the training data too much that it does not generalize well. It is also called a model with high variance as the difference between the actual value and the predicted value of the dependent variable in the test set will be high.
+Overfitting is a problem that occurs when the regression model gets tuned to the training data too much that it does not generalize well. It is also called a model with high variance as the difference between the actual value and the predicted value  on the test set tend to be high.
 
 LASSO (L1)
 
 Lasso helps us fight overfitting by penalizing certain coefficients and shrinking them towards zero. This penalty "targets" coefficients that are least important and just add noise to our model.
 
-For instance, imagine we are packing for a trip to vietnam and we are carrying only one bag and the company you are flying with doesn't allow hand baggage to weigh more than 8 kg and after packing, you find out your bag is 3 kg overweight. Eventually, you'll have to get rid of things until you meet with the weight requirements of the airline, but there are things you need and things that aren't that important. So to reduce weight you'll have to get rid of the things thst aren't crucial for your trip.
+For instance, imagine we are packing for a trip to vietnam and we are carrying only one bag and the company you are flying with doesn't allow hand baggage to weigh more than 8 kg. After packing, you find out your bag is 3 kg overweight. Eventually, you'll have to get rid of things until you meet with the weight requirements of the airline, but there are things you need and things that aren't that important. So to reduce weight you'll have to get rid of the things thst aren't crucial for your trip.
 
 Lasso does the same thing, targets features that aren't really important for our model and shrinks them towards 0 to make them irrelevant. If your model didn't shirnk them towards 0, it wouldn't be very accurate due to your prediction trying to fit every single variable and would end up highly overfitted resulting in a very inaccurate model.
 
