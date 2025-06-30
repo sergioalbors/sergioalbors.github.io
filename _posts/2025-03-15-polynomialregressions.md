@@ -152,6 +152,8 @@ and the polynomial shown at the terminal ( if there is no terminal you can press
 
 
 ![alt text](/assets/img/polynomialv.png)
+
+
 ### (X TX)^−1X^TY --- More points than coefficients
 
 If we have more points than coefficients, we will still be looking for 
@@ -160,31 +162,31 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-n = 100
+n = 100 # number of points
 
-x = np.random.uniform(-2, 2, n)
+x = np.random.uniform(-2, 2, n) # we create n points randomly between -2 and 2
 
-x = np.sort(x)
+x = np.sort(x) # we sort our points
 
 #x[0] = -1
 
 #x[n-1]= 1
 
-y = np.sin(2*x)  + 0.4*np.random.randn(n)
+y = np.sin(2*x)  + 0.4*np.random.randn(n) # we define a function to create the y-axis for our points and add a bit of gaussian noise
 
 #lets start our regression 
 
-degree = 6
+degree = 6 # degree of our polynomial
 
-X = X = np.vstack([x**i for i in range(degree + 1)]).T
+X = X = np.vstack([x**i for i in range(degree + 1)]).T # we create our matrix with the data
 
 r4 = np.array(degree+1)
 
-r4 = np.matmul(np.matmul(np.linalg.inv(np.matmul(X.T, X)),X.T),y)
+r4 = np.matmul(np.matmul(np.linalg.inv(np.matmul(X.T, X)),X.T),y) # solve the equation to get to the solution
 
-yh4 = np.matmul(X, r4)
+yh4 = np.matmul(X, r4)  multiply the matrix times the coefficients r4
 
-polinomio = np.poly1d(r4)
+polinomio = np.poly1d(r4) # creates the polynomial with the coefficients found above
 
 
 plt.scatter(x, y, label = "data")
