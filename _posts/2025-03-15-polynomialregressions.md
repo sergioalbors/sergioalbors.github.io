@@ -45,7 +45,7 @@ Let's consider a case of simple linear regression:
 
 linear vs polynomial
 
-![alt text](/assets/img/lp.png)
+![alt text](/assets/img/Figure_1.png)
 
 As we can see in the picture above, the linear model has very poor performance, whereas the polynomial model has a much better adjustment and consequently, will have a lower error.
 
