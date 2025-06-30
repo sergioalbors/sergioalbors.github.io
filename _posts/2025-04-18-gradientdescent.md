@@ -86,4 +86,4 @@ However, a very small learning rate isn´t ideal either because it takes too man
 
 Think at it as if you were trying to sintonize a radio to a certain frequence. Let's say we start at a frequency of 2.50 hz, and the frequence of our unit is at 15.50hz, if you start adding 5 hz every time, you will never find the right frequency due to your learning rate being too high and missing your target. But if you add little steps of 0.1 hz, it could take you forever to find the right frequence.
 
-![alt text](/assets/img/learningrate.png)
+![alt text](/assets/img/lrng.png)
